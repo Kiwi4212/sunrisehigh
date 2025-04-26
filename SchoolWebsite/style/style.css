@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-section img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-section h1 {
+    font-size: 1.8rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Banner (you can add background-image later if needed) */
+.banner {
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc') center/cover no-repeat;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Main Content */
+.main-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.main-content h2 {
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .logo-section {
+        flex-direction: column;
+    }
+
+    .logo-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
